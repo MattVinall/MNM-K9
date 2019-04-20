@@ -4,4 +4,8 @@ $(function() {
 		mobile: false,
 		offset: 50
 	});
+	// flickity carousel
+	$('.carousel').flickity({
+		wrapAround: true
+	});
 });
