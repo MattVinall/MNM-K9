@@ -5,7 +5,8 @@ $off-blue: #709fc1;
 $blue-underline: #008ed6;
 
 @mixin heading($lineHeight, $fontSize, $fontWeight) {
-	font-family: "Monsterrat", sans-serif;
+	font-family: "Monserrat", sans-serif;
+	text-transform: uppercase;
 	color: $black-shade;
 	font-size: $fontSize;
 	line-height: $lineHeight;

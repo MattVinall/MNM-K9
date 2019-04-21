@@ -14,11 +14,11 @@ p {
 }
 
 h1 {
-	@include heading(22px, 3.6rem, 700);
+	@include heading(22px, 7rem, 700);
 }
 
 h2 {
-	@include heading(56px, 3.6rem, 700);
+	@include heading(56px, 5rem, 700);
 }
 
 h3 {
@@ -41,7 +41,10 @@ li {
 }
 
 a {
-	@include text(0px, 2rem);
+	@include text(0, 2rem);
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 3px;
+	font-weight: bold;
 	display: block;
 }
 
