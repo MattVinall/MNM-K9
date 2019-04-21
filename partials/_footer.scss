@@ -1,0 +1,15 @@
+footer {
+	display: flex;
+	justify-content: center;
+	padding: 25px 0;
+	background: $off-white;
+	a {
+		display: inline;
+		letter-spacing: 0;
+		text-decoration: none;
+		color: $black-shade;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

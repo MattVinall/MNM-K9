@@ -4,6 +4,9 @@
 	background-color: #d3d3d3;
 	padding: 100px 0;
 	min-height: 100vh;
+	h2 {
+		text-align: center;
+	}
 	h3 {
 		@include heading(3, 4rem, 700);
 		color: #008ed6;

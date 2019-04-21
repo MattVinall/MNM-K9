@@ -8,4 +8,17 @@ $(function() {
 	$('.carousel').flickity({
 		wrapAround: true
 	});
+	// Smooth Scroll
+	$('a').smoothScroll({
+		offset: 100,
+		speed: 1200
+	});
+
+	// Hamburger Menu
+	$('.hamburger').on('click', function() {
+		$('.navigationContainer').fadeIn(500);
+	});
+	$('.exitResponsive').on('click', function() {
+		$('.navigationContainer').fadeOut(500);
+	});
 });
