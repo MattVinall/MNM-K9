@@ -3,3 +3,17 @@ $off-white: #f5f5f5;
 $black-shade: #262626;
 $off-blue: #709fc1;
 $blue-underline: #008ed6;
+
+@mixin heading($lineHeight, $fontSize, $fontWeight) {
+	font-family: "Monsterrat", sans-serif;
+	color: $black-shade;
+	font-size: $fontSize;
+	line-height: $lineHeight;
+	font-weight: $fontWeight;
+}
+
+@mixin text($lineHeight, $fontSize) {
+	font-family: "Roboto", sans-serif;
+	font-size: $fontSize;
+	line-height: $lineHeight;
+}

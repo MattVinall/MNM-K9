@@ -1,0 +1,31 @@
+/* CONNECT SECTION STYLES */
+
+.connect {
+	background-color: #709fc1;
+	color: #fff;
+	min-height: 20vh;
+}
+
+.social {
+	display: flex;
+	justify-content: center;
+}
+
+.socialContainer i {
+	font-size: 5rem;
+	color: $off-white;
+	margin: 75px;
+	transition: 300ms ease-in;
+}
+
+.social i.fa-facebook:hover {
+	color: #3b5998;
+}
+
+.social i.fa-instagram:hover {
+	color: #bc2a8d;
+}
+
+.social i.fa-yelp:hover {
+	color: #af0606;
+}

@@ -1,0 +1,47 @@
+/* ABOUT TEAM STYLES */
+
+.about {
+	background-color: #d3d3d3;
+	padding: 100px 0;
+	min-height: 100vh;
+	h3 {
+		@include heading(3, 4rem, 700);
+		color: #008ed6;
+	}
+	p {
+		@include text(2.5, 1.6rem);
+		color: $black-shade;
+		font-weight: 300;
+		width: 90%;
+	}
+}
+
+.bioContainer {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.team {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 50px 100px;
+}
+
+.mukka img,
+.fenrir img {
+	float: right;
+	margin-right: 100px;
+}
+
+.bioText {
+	flex: 1 1 300px;
+}
+
+.teamImage {
+	flex: 1 1 400px;
+	img {
+		width: 400px;
+		border-radius: 50%;
+	}
+}
