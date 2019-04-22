@@ -25,6 +25,7 @@
 	transition: 400ms ease-in;
 	&:hover {
 		color: $off-blue;
+		transform: scale(1.2);
 	}
 }
 

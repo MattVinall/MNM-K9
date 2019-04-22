@@ -251,7 +251,7 @@ h2::after {
   content: "";
   position: absolute;
   bottom: -15px;
-  left: 42%;
+  left: 46%;
   background: #c71585;
   width: 125px;
   height: 3px;
@@ -412,14 +412,20 @@ header {
 
 .social i.fa-facebook:hover {
   color: #3b5998;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .social i.fa-instagram:hover {
   color: #bc2a8d;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .social i.fa-yelp:hover {
   color: #af0606;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 /* ABOUT TEAM STYLES */
@@ -445,7 +451,7 @@ header {
 
 .about p {
   font-family: "Roboto", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   line-height: 2.5;
   color: #262626;
   font-weight: 300;
@@ -731,6 +737,8 @@ ol.flickity-page-dots {
 
 .icon i:hover {
   color: #709fc1;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .contactLink a {
