@@ -215,6 +215,7 @@ html,
 body {
   font-size: 62.5%;
   font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
 }
 
 h1,
@@ -475,7 +476,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 50px 100px;
+  padding: 50px 0;
 }
 
 .mukka img,
@@ -486,8 +487,8 @@ header {
 
 .bioText {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 300px;
-          flex: 1 1 300px;
+      -ms-flex: 1 1 450px;
+          flex: 1 1 450px;
 }
 
 .teamImage {
@@ -504,7 +505,6 @@ header {
 /* GALLERY STYLES */
 .gallery {
   background-color: #f5f5f5;
-  min-height: 100vh;
   padding: 100px 0;
 }
 
@@ -880,5 +880,308 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+/* MEDIA QUERIES */
+/* TABLETS */
+@media screen and (min-width: 700px) and (max-width: 1024px) {
+  header {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.3))), url(../assets/Website-cover.jpg);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.3) 100%), url(../assets/Website-cover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    min-height: 100vh;
+  }
+  h2::after {
+    left: unset;
+    right: 50%;
+  }
+  .hamburger,
+  .exitResponsive {
+    display: block;
+    font-size: 3rem;
+    color: #fff;
+    margin-top: 60px;
+  }
+  .exitResponsive {
+    margin-left: 15%;
+  }
+  .navigationContainer {
+    position: absolute;
+    right: 50%;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+  }
+  .menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: 500ms ease-in;
+    transition: 500ms ease-in;
+  }
+  .menu ul a {
+    font-size: 5rem;
+    width: 100%;
+    padding: 50px 0;
+    color: #fff;
+    right: unset;
+  }
+  .teamImage img {
+    margin-top: 50px;
+    margin: 0 auto;
+  }
+  .bioText {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .about {
+    text-align: center;
+  }
+  .about p {
+    width: 90%;
+  }
+  .teamImage {
+    -webkit-box-flex: unset;
+        -ms-flex: unset;
+            flex: unset;
+    margin: 0 auto;
+  }
+  .dogServices {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact {
+    min-height: 50vh;
+    padding: 50px 0;
+  }
+  .contact h3,
+  .contact p {
+    text-align: center;
+  }
+  .contactContainer {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .servicesContainer h3 {
+    padding-top: 50px;
+  }
+  .servicesContainer h3.quote::before {
+    top: 20%;
+  }
+  .quote {
+    padding: 0 10%;
+  }
+  .formContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .googleMap iframe {
+    padding: 20px 0;
+  }
+}
+
+/* MEDIUM TO LARGE MOBILE */
+@media screen and (max-width: 700px) {
+  header {
+    min-height: 100vh;
+  }
+  .hamburger,
+  .exitResponsive {
+    display: block;
+    font-size: 4rem;
+    color: #fff;
+    margin-top: 60px;
+  }
+  .navigationContainer {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+  }
+  .menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: 500ms ease-in;
+    transition: 500ms ease-in;
+    padding-top: 100px;
+  }
+  .menu ul a {
+    font-size: 4rem;
+    text-align: center;
+    width: 100%;
+    padding: 50px 0;
+    color: #fff;
+  }
+  main {
+    text-align: center;
+  }
+  .servicesContainer h3.quote::before {
+    top: 12%;
+  }
+  h2::after {
+    left: unset;
+    right: 50%;
+  }
+  .logoContainer {
+    margin: 40px;
+  }
+  .logo {
+    margin: 0;
+  }
+  .team {
+    padding: 0 50px;
+    text-align: center;
+  }
+  .tyler {
+    margin-top: 50px;
+  }
+  .team .teamImage img {
+    margin: 0 auto;
+  }
+  .teamImage {
+    -webkit-box-flex: unset;
+        -ms-flex: unset;
+            flex: unset;
+    margin: 0 auto;
+  }
+  .bioText {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .about p {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  ol.flickity-page-dots {
+    padding-bottom: 100px;
+  }
+  .servicesContainer h3.quote::before {
+    left: 40%;
+  }
+  .dogServices {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .services,
+  .gallery,
+  .about,
+  .contact,
+  .contactContainer {
+    padding: 20px 0 0 0;
+  }
+  .contact h3,
+  .contact p {
+    text-align: center;
+  }
+  .contactContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact h2 {
+    margin-bottom: 50px;
+  }
+  .contactLink a {
+    padding: 25px 0 50px 0;
+    text-align: center;
+  }
+  .formContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .googleMap iframe {
+    padding: 20px 0;
+    max-width: 350px;
+    max-height: 350px;
+  }
+  input,
+  select,
+  textarea {
+    width: 300px;
+  }
+}
+
+/* SMALL MOBILE */
+@media screen and (min-width: 300px) and (max-width: 400px) {
+  .menu ul a {
+    font-size: 4rem;
+    padding: 20px;
+  }
+  .exitResponsive {
+    margin-left: 10%;
+  }
+  .servicesContainer .social i {
+    padding: 20px;
+  }
+  .dogServices .card {
+    width: 250px;
+    height: 250px;
+  }
+  .servicesContainer h3 {
+    padding-top: 50px;
+  }
+  .contact {
+    margin: auto;
+  }
+  .googleMap iframe {
+    padding-top: 20px;
+    max-width: 300px;
+    max-height: 300px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
