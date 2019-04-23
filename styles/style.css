@@ -654,7 +654,7 @@ ol.flickity-page-dots {
   width: 350px;
   min-height: 350px;
   -webkit-perspective: 800px;
-          perspective: 800px;
+  perspective: 800px;
   position: relative;
   margin: 50px;
 }
