@@ -31,10 +31,21 @@
 	padding: 50px 0;
 }
 
+.teamImage img {
+	margin: 0 auto;
+}
+
+.mukka h3,
+.mukka p,
+.fenrir h3,
+.fenrir p {
+	text-align: right;
+	width: 90%;
+}
+
 .mukka img,
 .fenrir img {
-	float: right;
-	margin-right: 100px;
+	margin: 0 auto;
 }
 
 .bioText {
@@ -42,7 +53,7 @@
 }
 
 .teamImage {
-	flex: 1 1 400px;
+	flex: 1 1 450px;
 	img {
 		width: 400px;
 		border-radius: 50%;

@@ -201,8 +201,15 @@
 	}
 
 	.about p {
-		width: 100%;
+		width: 95%;
 		padding: 0;
+		text-align: center;
+	}
+
+	.team p,
+	.team h3 {
+		text-align: center;
+		width: unset;
 	}
 
 	ol.flickity-page-dots {
