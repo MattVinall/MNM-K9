@@ -897,6 +897,20 @@ footer a:hover {
 }
 
 /* MEDIA QUERIES */
+@media screen and (max-width: 1285px) {
+  .contactContainer {
+    text-align: center;
+  }
+  .formContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .formInfo {
+    text-align: center;
+  }
+}
+
 /* TABLETS */
 @media screen and (min-width: 700px) and (max-width: 1024px) {
   header {

@@ -1,5 +1,21 @@
 /* MEDIA QUERIES */
 
+// edge case in contact section
+
+@media screen and (max-width: 1285px) {
+	.contactContainer {
+		text-align: center;
+	}
+
+	.formContainer {
+		justify-content: center;
+	}
+
+	.formInfo {
+		text-align: center;
+	}
+}
+
 /* TABLETS */
 
 @media screen and (min-width: 700px) and (max-width: 1024px) {
