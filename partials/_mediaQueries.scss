@@ -187,13 +187,12 @@
 		margin-top: 50px;
 	}
 
-	.team .teamImage img {
-		margin: 0 auto;
-	}
-
 	.teamImage {
 		flex: unset;
 		margin: 0 auto;
+		img {
+			margin: 0 auto;
+		}
 	}
 
 	.bioText {
@@ -274,6 +273,14 @@
 		flex-direction: column;
 		align-items: center;
 		margin: 0;
+	}
+
+	.servicesContainer .social i {
+		padding: 25px 0;
+	}
+
+	.dogServices {
+		padding-top: 0;
 	}
 }
 

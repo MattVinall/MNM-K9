@@ -600,6 +600,9 @@ ol.flickity-page-dots {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 300px;
+          flex: 1 1 300px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -664,6 +667,7 @@ ol.flickity-page-dots {
   -webkit-transition: all 0.9s;
   transition: all 0.9s;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .dogServices .front {
@@ -675,7 +679,7 @@ ol.flickity-page-dots {
   background-color: #d3d3d3;
   color: #f5f5f5;
   -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  transform: rotateY(180deg);
   position: absolute;
   top: 0;
   right: 0;
@@ -699,13 +703,13 @@ ol.flickity-page-dots {
 }
 
 .dogServices .card:hover .back {
-  -webkit-transform: rotateY(0);
-          transform: rotateY(0);
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0);
 }
 
 .dogServices .card:hover .front {
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(-180deg);
 }
 
 /* CONTACT STYLES */
@@ -1082,13 +1086,13 @@ footer a:hover {
   .tyler {
     margin-top: 50px;
   }
-  .team .teamImage img {
-    margin: 0 auto;
-  }
   .teamImage {
     -webkit-box-flex: unset;
         -ms-flex: unset;
             flex: unset;
+    margin: 0 auto;
+  }
+  .teamImage img {
     margin: 0 auto;
   }
   .bioText {
@@ -1172,6 +1176,12 @@ footer a:hover {
         -ms-flex-align: center;
             align-items: center;
     margin: 0;
+  }
+  .servicesContainer .social i {
+    padding: 25px 0;
+  }
+  .dogServices {
+    padding-top: 0;
   }
 }
 
