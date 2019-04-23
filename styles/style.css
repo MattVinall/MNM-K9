@@ -660,7 +660,7 @@ ol.flickity-page-dots {
   -webkit-perspective: 800px;
   perspective: 800px;
   position: relative;
-  margin: 50px auto;
+  margin: 50px;
 }
 
 .dogServices .front,
@@ -1004,6 +1004,9 @@ footer a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .dogServices .card {
+    margin: 25px auto;
   }
   .contact {
     min-height: 50vh;

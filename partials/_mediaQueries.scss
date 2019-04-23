@@ -98,6 +98,9 @@
 	.dogServices {
 		flex-direction: row;
 		align-items: center;
+		.card {
+			margin: 25px auto;
+		}
 	}
 
 	.contact {
