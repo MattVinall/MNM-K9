@@ -10,7 +10,7 @@ $(function() {
 	});
 	// Smooth Scroll
 	$('a').smoothScroll({
-		offset: 100,
+		offset: 50,
 		speed: 1200
 	});
 

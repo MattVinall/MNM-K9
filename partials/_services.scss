@@ -12,7 +12,7 @@
 		text-align: center;
 	}
 	p {
-		@include text(1.6, 2.5rem);
+		@include text(1.6, 2rem);
 		padding: 50px 0;
 		text-align: center;
 	}
@@ -43,7 +43,7 @@
 	justify-content: center;
 	position: relative;
 	h3 {
-		@include heading(1.6, 4rem, 700);
+		@include heading(1.6, 3.5rem, 700);
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -69,7 +69,7 @@
 	-webkit-perspective: 800px;
 	perspective: 800px;
 	position: relative;
-	margin: 50px;
+	margin: 50px auto;
 }
 
 .dogServices .front,

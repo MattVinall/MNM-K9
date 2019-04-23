@@ -220,6 +220,12 @@
 		align-items: center;
 	}
 
+	.servicesContainer {
+		p {
+			@include text(1.6, 1.8rem);
+		}
+	}
+
 	.services,
 	.gallery,
 	.about,
@@ -324,10 +330,10 @@
 
 	footer {
 		p {
-			font-size: 1.5rem;
+			font-size: 1.4rem;
 		}
 		a {
-			font-size: 1.5rem;
+			font-size: 1.4rem;
 		}
 	}
 }

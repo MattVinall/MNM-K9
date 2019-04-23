@@ -451,7 +451,7 @@ header {
 
 .about p {
   font-family: "Roboto", sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   line-height: 2.5;
   color: #262626;
   font-weight: 300;
@@ -567,7 +567,7 @@ ol.flickity-page-dots {
 
 .servicesContainer p {
   font-family: "Roboto", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 1.6;
   padding: 50px 0;
   text-align: center;
@@ -619,7 +619,7 @@ ol.flickity-page-dots {
   font-family: "Monserrat", sans-serif;
   text-transform: uppercase;
   color: #262626;
-  font-size: 4rem;
+  font-size: 3.5rem;
   line-height: 1.6;
   font-weight: 700;
   position: absolute;
@@ -656,7 +656,7 @@ ol.flickity-page-dots {
   -webkit-perspective: 800px;
   perspective: 800px;
   position: relative;
-  margin: 50px;
+  margin: 50px auto;
 }
 
 .dogServices .front,
@@ -1122,6 +1122,11 @@ footer a:hover {
         -ms-flex-align: center;
             align-items: center;
   }
+  .servicesContainer p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.6;
+  }
   .services,
   .gallery,
   .about,
@@ -1216,10 +1221,10 @@ footer a:hover {
     max-height: 300px;
   }
   footer p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   footer a {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
