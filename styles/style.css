@@ -309,6 +309,10 @@ img {
   margin: 0 auto;
 }
 
+.desktop-hidden {
+  display: none;
+}
+
 header {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.3))), url(/assets/Website-cover.jpg);
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.3) 100%), url(/assets/Website-cover.jpg);
@@ -1135,6 +1139,33 @@ footer a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .dogServices .card {
+    width: 400px;
+    height: 400px;
+  }
+  .dogServices .back {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  .dogServices .back:hover {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  .dogServices .front {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+  .dogServices .front:hover {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+  .desktop-hidden {
+    display: block;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 10px;
   }
   .servicesContainer p {
     font-family: "Roboto", sans-serif;
