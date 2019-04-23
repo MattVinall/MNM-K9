@@ -241,10 +241,6 @@
 	.dogServices {
 		flex-direction: column;
 		align-items: center;
-		.card {
-			width: 400px;
-			height: 400px;
-		}
 	}
 
 	.dogServices .back {
@@ -266,12 +262,17 @@
 		}
 	}
 
-	.desktop-hidden {
+	.pricing p {
+		font-size: 1.8rem;
+	}
+
+	p.desktop-hidden {
 		display: block;
 		text-transform: uppercase;
-		font-size: 2rem;
+		font-size: 2.5rem;
 		font-weight: 700;
 		padding-bottom: 10px;
+		text-decoration: underline;
 	}
 
 	.servicesContainer {
@@ -346,7 +347,7 @@
 
 /* SMALL MOBILE */
 
-@media screen and (min-width: 300px) and (max-width: 400px) {
+@media screen and (min-width: 300px) and (max-width: 450px) {
 	.menu ul a {
 		font-size: 4rem;
 		padding: 20px;
@@ -366,6 +367,7 @@
 	.dogServices .card {
 		width: 250px;
 		height: 250px;
+		margin: 25px auto;
 	}
 
 	.servicesContainer h3 {
