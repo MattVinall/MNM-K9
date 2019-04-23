@@ -391,7 +391,6 @@ header {
 .connect {
   background-color: #709fc1;
   color: #fff;
-  min-height: 20vh;
 }
 
 .social {
@@ -988,9 +987,6 @@ footer a:hover {
   .servicesContainer h3 {
     padding-top: 50px;
   }
-  .servicesContainer h3.quote::before {
-    top: 20%;
-  }
   .quote {
     padding: 0 10%;
   }
@@ -1059,9 +1055,6 @@ footer a:hover {
   main {
     text-align: center;
   }
-  .servicesContainer h3.quote::before {
-    top: 12%;
-  }
   h2::after {
     left: unset;
     right: 50%;
@@ -1073,7 +1066,6 @@ footer a:hover {
     margin: 0;
   }
   .team {
-    padding: 0 50px;
     text-align: center;
   }
   .tyler {
@@ -1095,13 +1087,10 @@ footer a:hover {
   }
   .about p {
     width: 100%;
-    padding-bottom: 50px;
+    padding: 0;
   }
   ol.flickity-page-dots {
     padding-bottom: 100px;
-  }
-  .servicesContainer h3.quote::before {
-    left: 40%;
   }
   .dogServices {
     -webkit-box-orient: vertical;
@@ -1117,7 +1106,7 @@ footer a:hover {
   .about,
   .contact,
   .contactContainer {
-    padding: 20px 0 0 0;
+    padding: 50px 0;
   }
   .contact h3,
   .contact p {
@@ -1152,7 +1141,20 @@ footer a:hover {
   input,
   select,
   textarea {
-    width: 300px;
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .social {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
   }
 }
 
@@ -1164,6 +1166,9 @@ footer a:hover {
   }
   .exitResponsive {
     margin-left: 10%;
+  }
+  .carousel-cell {
+    height: 300px;
   }
   .servicesContainer .social i {
     padding: 20px;
@@ -1182,6 +1187,12 @@ footer a:hover {
     padding-top: 20px;
     max-width: 300px;
     max-height: 300px;
+  }
+  footer p {
+    font-size: 1.5rem;
+  }
+  footer a {
+    font-size: 1.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
