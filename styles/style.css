@@ -1089,7 +1089,7 @@ footer a:hover {
     color: #fff;
   }
   .socialContainer i {
-    margin: 25px;
+    margin: 50px 25px;
   }
   main {
     text-align: center;
@@ -1223,16 +1223,6 @@ footer a:hover {
 }
 
 @media screen and (max-width: 500px) {
-  .social {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 0;
-  }
   .servicesContainer .social i {
     padding: 25px 0;
   }

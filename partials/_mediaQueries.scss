@@ -182,7 +182,7 @@
 	}
 
 	.socialContainer i {
-		margin: 25px;
+		margin: 50px 25px;
 	}
 
 	main {
@@ -330,12 +330,6 @@
 // EDGE CASE
 
 @media screen and (max-width: 500px) {
-	.social {
-		flex-direction: column;
-		align-items: center;
-		margin: 0;
-	}
-
 	.servicesContainer .social i {
 		padding: 25px 0;
 	}
