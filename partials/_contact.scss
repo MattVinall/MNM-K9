@@ -19,7 +19,7 @@
 
 .icon i {
 	font-size: 5rem;
-	color: #fff;
+	color: $off-white;
 	display: flex;
 	justify-content: center;
 	transition: 400ms ease-in;
@@ -45,7 +45,7 @@
 }
 
 iframe:hover {
-	box-shadow: 5px 5px 25px #000;
+	box-shadow: 5px 5px 25px $black-shade;
 }
 
 /* FORM STYLES */
@@ -81,7 +81,7 @@ select {
 	-webkit-appearance: none;
 	font-size: 1.8rem;
 	appearance: none;
-	border: 1px solid #000;
+	border: 1px solid $black-shade;
 	background-image: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png);
 	background-repeat: no-repeat;
 	background-position: 95% center;
@@ -95,12 +95,12 @@ input {
 	font-size: 1.8rem;
 	justify-content: center;
 	flex-wrap: wrap;
-	background-color: #fff;
-	color: #000;
+	background-color: $off-white;
+	color: $black-shade;
 	width: 600px;
 	padding: 25px;
 	margin-top: 20px;
-	border: 1px solid #000;
+	border: 1px solid $black-shade;
 	border-radius: 5px;
 }
 
@@ -109,17 +109,19 @@ textarea {
 	margin-top: 20px;
 	padding: 25px;
 	font-size: 1.8rem;
+	border: 1px solid $black-shade;
 }
 
 input[type="submit"] {
 	background-color: #709fc1;
-	color: #fff;
+	color: $off-white;
 	text-transform: uppercase;
 	font-size: 1.8rem;
+	border: 1px solid $black-shade;
 }
 
-select:hover,
-input:hover {
-	box-shadow: 5px 5px $black-shade;
-	transition: 300ms ease-out;
-}
+// select:hover,
+// input:hover {
+// 	box-shadow: 5px 5px $black-shade;
+// 	transition: 300ms ease-out;
+// }
