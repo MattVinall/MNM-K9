@@ -1,6 +1,6 @@
 header {
 	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.3) 100%),
-		url(/assets/Website-cover.jpg);
+		url(../assets/Website-cover.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 100%;
@@ -32,7 +32,7 @@ header {
 .navigationMenu {
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 5%;
+	margin-top: 10%;
 }
 
 .navigationMenu li {
