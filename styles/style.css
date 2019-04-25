@@ -1147,19 +1147,15 @@ footer a:hover {
         -ms-flex-align: center;
             align-items: center;
   }
+  .dogServices .card {
+    -webkit-perspective: 0;
+    perspective: 0;
+  }
   .dogServices .back {
     -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg);
   }
-  .dogServices .back:hover {
-    -webkit-transform: rotateY(0deg);
-    transform: rotateY(0deg);
-  }
   .dogServices .front {
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-  }
-  .dogServices .front:hover {
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
   }

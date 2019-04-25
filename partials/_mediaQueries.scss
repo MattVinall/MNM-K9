@@ -248,25 +248,21 @@
 	.dogServices {
 		flex-direction: column;
 		align-items: center;
+		.card {
+			-webkit-perspective: 0;
+			perspective: 0;
+		}
 	}
 
 	.dogServices .back {
 		-webkit-transform: rotateY(0deg);
 		transform: rotateY(0deg);
-		&:hover {
-			-webkit-transform: rotateY(0deg);
-			transform: rotateY(0deg);
-		}
 	}
 
 	// on :hover - set values to same to offset any card-flipping styles
 	.dogServices .front {
 		-webkit-transform: rotateY(180deg);
 		transform: rotateY(180deg);
-		&:hover {
-			-webkit-transform: rotateY(180deg);
-			transform: rotateY(180deg);
-		}
 	}
 
 	.pricing p {
