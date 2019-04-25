@@ -86,8 +86,15 @@
 	.about {
 		text-align: center;
 		p {
-			width: 90%;
+			width: 100%;
 		}
+	}
+
+	.mukka h3,
+	.fenrir h3,
+	.mukka .bioText p,
+	.fenrir .bioText p {
+		text-align: center;
 	}
 
 	.teamImage {

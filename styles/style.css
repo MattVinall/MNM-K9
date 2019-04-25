@@ -491,7 +491,7 @@ header {
 .fenrir h3,
 .fenrir p {
   text-align: right;
-  width: 90%;
+  width: 100%;
 }
 
 .mukka img,
@@ -507,12 +507,13 @@ header {
 
 .teamImage {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 450px;
-          flex: 1 1 450px;
+      -ms-flex: 1 1 400px;
+          flex: 1 1 400px;
 }
 
 .teamImage img {
-  width: 400px;
+  width: 350px;
+  max-height: 350px;
   border-radius: 50%;
 }
 
@@ -982,7 +983,13 @@ footer a:hover {
     text-align: center;
   }
   .about p {
-    width: 90%;
+    width: 100%;
+  }
+  .mukka h3,
+  .fenrir h3,
+  .mukka .bioText p,
+  .fenrir .bioText p {
+    text-align: center;
   }
   .teamImage {
     -webkit-box-flex: unset;

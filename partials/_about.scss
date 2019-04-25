@@ -40,7 +40,7 @@
 .fenrir h3,
 .fenrir p {
 	text-align: right;
-	width: 90%;
+	width: 100%;
 }
 
 .mukka img,
@@ -53,9 +53,10 @@
 }
 
 .teamImage {
-	flex: 1 1 450px;
+	flex: 1 1 400px;
 	img {
-		width: 400px;
+		width: 350px;
+		max-height: 350px;
 		border-radius: 50%;
 	}
 }
