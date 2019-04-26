@@ -10,6 +10,7 @@
 	h3 {
 		@include heading(3, 4rem, 700);
 		color: #008ed6;
+		width: 90%;
 	}
 	p {
 		@include text(2, 1.8rem);
@@ -40,7 +41,7 @@
 .fenrir h3,
 .fenrir p {
 	text-align: right;
-	width: 100%;
+	width: 90%;
 }
 
 .mukka img,
@@ -49,11 +50,11 @@
 }
 
 .bioText {
-	flex: 1 1 450px;
+	flex: 1 1 400px;
 }
 
 .teamImage {
-	flex: 1 1 400px;
+	flex: 1 0 350px;
 	img {
 		width: 350px;
 		max-height: 350px;
