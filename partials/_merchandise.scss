@@ -14,9 +14,9 @@
 
 .productContainer {
 	display: flex;
-	flex: 1 1 auto;
+	flex: 1 1 250px;
 	flex-direction: column;
-	justify-content: space-between;
+	align-items: center;
 	margin: 25px;
 	.productImage img {
 		width: 300px;
@@ -39,3 +39,5 @@
 		}
 	}
 }
+
+// @media screen and (max-width: );
