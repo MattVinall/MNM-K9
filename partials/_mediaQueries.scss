@@ -43,8 +43,11 @@
 	}
 
 	.teamImage {
-		flex: unset;
+		display: flex;
 		margin: 0 auto;
+		img {
+			align-self: center;
+		}
 	}
 
 	.dogServices {
@@ -89,19 +92,27 @@
 	}
 }
 
+//edge case
+
+@media screen and (max-width: 850px) {
+	.team h3 {
+		width: unset;
+	}
+}
+
 /* MEDIUM TO LARGE MOBILE */
 
 @media screen and (max-width: 700px) {
-	header {
-		min-height: 100vh;
-	}
-
 	.hamburger,
 	.exitResponsive {
 		display: block;
 		font-size: 4rem;
-		color: #fff;
-		margin-top: 60px;
+		color: $off-white;
+		font-weight: 800;
+	}
+
+	.hamburger {
+		padding-top: 50px;
 	}
 
 	.navigationContainer {
@@ -112,7 +123,7 @@
 		right: 0;
 		bottom: 0;
 		background: rgba(0, 0, 0, 0.5);
-		color: #fff;
+		color: $off-white;
 		text-align: center;
 	}
 
@@ -128,7 +139,7 @@
 		text-align: center;
 		width: 100%;
 		padding: 50px 0;
-		color: #fff;
+		color: $off-white;
 	}
 
 	.socialContainer i {
@@ -144,12 +155,8 @@
 		right: 50%;
 	}
 
-	.logoContainer {
-		margin: 40px;
-	}
-
 	.logo {
-		margin: 0;
+		margin-top: 30px;
 	}
 
 	.team {
@@ -164,6 +171,8 @@
 		flex: unset;
 		margin: 0 auto;
 		img {
+			width: 250px;
+			height: 250px;
 			margin: 0 auto;
 		}
 	}
@@ -181,7 +190,6 @@
 	.team p,
 	.team h3 {
 		text-align: center;
-		width: unset;
 	}
 
 	ol.flickity-page-dots {
@@ -282,9 +290,15 @@
 /* SMALL MOBILE */
 
 @media screen and (min-width: 300px) and (max-width: 450px) {
+	.hamburger,
+	.exitResponsive {
+		color: $black-shade;
+	}
+
 	.menu ul a {
 		font-size: 4rem;
 	}
+
 	.exitResponsive {
 		margin-left: 10%;
 	}
@@ -318,9 +332,7 @@
 	}
 
 	footer {
-		p {
-			font-size: 1.4rem;
-		}
+		p,
 		a {
 			font-size: 1.4rem;
 		}

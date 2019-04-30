@@ -996,10 +996,15 @@ footer a:hover {
     text-align: center;
   }
   .teamImage {
-    -webkit-box-flex: unset;
-        -ms-flex: unset;
-            flex: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin: 0 auto;
+  }
+  .teamImage img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .dogServices {
     -webkit-box-orient: horizontal;
@@ -1048,17 +1053,23 @@ footer a:hover {
   }
 }
 
+@media screen and (max-width: 850px) {
+  .team h3 {
+    width: unset;
+  }
+}
+
 /* MEDIUM TO LARGE MOBILE */
 @media screen and (max-width: 700px) {
-  header {
-    min-height: 100vh;
-  }
   .hamburger,
   .exitResponsive {
     display: block;
     font-size: 4rem;
-    color: #fff;
-    margin-top: 60px;
+    color: #f5f5f5;
+    font-weight: 800;
+  }
+  .hamburger {
+    padding-top: 50px;
   }
   .navigationContainer {
     position: absolute;
@@ -1068,7 +1079,7 @@ footer a:hover {
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
-    color: #fff;
+    color: #f5f5f5;
     text-align: center;
   }
   .menu ul {
@@ -1090,7 +1101,7 @@ footer a:hover {
     text-align: center;
     width: 100%;
     padding: 50px 0;
-    color: #fff;
+    color: #f5f5f5;
   }
   .socialContainer i {
     margin: 50px 25px;
@@ -1102,11 +1113,8 @@ footer a:hover {
     left: unset;
     right: 50%;
   }
-  .logoContainer {
-    margin: 40px;
-  }
   .logo {
-    margin: 0;
+    margin-top: 30px;
   }
   .team {
     text-align: center;
@@ -1121,6 +1129,8 @@ footer a:hover {
     margin: 0 auto;
   }
   .teamImage img {
+    width: 250px;
+    height: 250px;
     margin: 0 auto;
   }
   .bioText {
@@ -1136,7 +1146,6 @@ footer a:hover {
   .team p,
   .team h3 {
     text-align: center;
-    width: unset;
   }
   ol.flickity-page-dots {
     padding-bottom: 100px;
@@ -1229,6 +1238,10 @@ footer a:hover {
 
 /* SMALL MOBILE */
 @media screen and (min-width: 300px) and (max-width: 450px) {
+  .hamburger,
+  .exitResponsive {
+    color: #262626;
+  }
   .menu ul a {
     font-size: 4rem;
   }
@@ -1257,9 +1270,7 @@ footer a:hover {
     max-width: 300px;
     max-height: 300px;
   }
-  footer p {
-    font-size: 1.4rem;
-  }
+  footer p,
   footer a {
     font-size: 1.4rem;
   }
