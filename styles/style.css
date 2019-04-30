@@ -1084,7 +1084,6 @@ footer a:hover {
             align-items: center;
     -webkit-transition: 500ms ease-in;
     transition: 500ms ease-in;
-    padding-top: 100px;
   }
   .menu ul a {
     font-size: 4rem;
