@@ -1,6 +1,5 @@
 header {
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.3) 100%),
-		url(../assets/Website-cover.jpg);
+	background-image: url(../assets/Website-cover.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 100%;
@@ -8,55 +7,57 @@ header {
 	min-height: 80vh;
 }
 
-.headerContainer {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	margin-right: 20px;
+.hamburger,
+.exitResponsive {
+	display: block;
+	font-size: 4rem;
+	color: #fff;
+}
+
+.hamburger {
+	padding-top: 50px;
+}
+
+.exitResponsive {
+	text-align: center;
+	padding-top: 25px;
 }
 
 .navigationContainer {
+	position: absolute;
+	right: 50%;
+	display: none;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+}
+
+.menu ul {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	flex-direction: column;
 	align-items: center;
+	justify-content: center;
+	transition: 500ms ease-in;
+	margin-top: 50px;
+}
+
+.menu ul a {
+	font-size: 5rem;
+	width: 100%;
+	padding: 50px 0;
+	color: $off-white;
+	right: unset;
+	text-decoration: none;
+	text-transform: uppercase;
 }
 
 .logo {
 	border-radius: 50%;
 	width: 75px;
 	min-height: 75px;
-	margin: 40px 0 0 100px;
-}
-
-.navigationMenu {
-	display: flex;
-	flex-wrap: wrap;
-	margin-top: 10%;
-}
-
-.navigationMenu li {
-	margin: 5px;
-}
-
-.navigationMenu a {
-	padding: 15px;
-	border-radius: 50px;
-	text-decoration: none;
-	font-size: 2rem;
-	color: $off-white;
-	text-transform: uppercase;
-}
-
-.hvr-underline-from-center {
-	color: dodgerblue;
-}
-
-.hamburger,
-.exitResponsive {
-	display: none;
-}
-
-.show.navigationContainer {
-	display: block;
+	margin-top: 50px;
+	float: right;
 }

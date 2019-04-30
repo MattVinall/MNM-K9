@@ -19,61 +19,6 @@
 /* TABLETS */
 
 @media screen and (min-width: 700px) and (max-width: 1024px) {
-	header {
-		background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.3) 100%),
-			url(../assets/Website-cover.jpg);
-		background-size: cover;
-		background-repeat: no-repeat;
-		width: 100%;
-		background-position: center;
-		min-height: 100vh;
-	}
-
-	h2::after {
-		left: unset;
-		right: 50%;
-	}
-
-	.hamburger,
-	.exitResponsive {
-		display: block;
-		font-size: 3rem;
-		color: #fff;
-		margin-top: 60px;
-	}
-
-	.exitResponsive {
-		margin-left: 15%;
-	}
-
-	.navigationContainer {
-		position: absolute;
-		right: 50%;
-		display: none;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		background: rgba(0, 0, 0, 0.5);
-		color: #fff;
-	}
-
-	.menu ul {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		transition: 500ms ease-in;
-	}
-
-	.menu ul a {
-		font-size: 5rem;
-		width: 100%;
-		padding: 50px 0;
-		color: #fff;
-		right: unset;
-	}
-
 	.teamImage img {
 		margin-top: 50px;
 		margin: 0 auto;
