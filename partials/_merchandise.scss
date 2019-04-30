@@ -1,0 +1,41 @@
+//MERCHANDISE STYLES
+.merchandise {
+	margin: 100px 0;
+	h2 {
+		text-align: center;
+		margin-bottom: 50px;
+	}
+}
+
+.storeContainer {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.productContainer {
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 25px;
+	.productImage img {
+		width: 300px;
+		height: 300px;
+		transition: all 300ms ease-in-out;
+		&:hover {
+			transform: scale(1.2);
+		}
+	}
+	.productText {
+		margin-top: 30px;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		p {
+			font-size: 2.5rem;
+			color: $blue-heading;
+			padding-top: 10px;
+			font-weight: bold;
+		}
+	}
+}
