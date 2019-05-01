@@ -585,8 +585,6 @@ ol.flickity-page-dots {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: 300ms ease-in;
-  transition: 300ms ease-in;
 }
 
 .servicesContainer .social i {
@@ -1264,8 +1262,8 @@ footer a:hover {
     padding: 20px;
   }
   .dogServices .card {
-    width: 250px;
-    height: 250px;
+    width: 275px;
+    height: 275px;
     margin: 25px auto;
   }
   .servicesContainer h3 {
