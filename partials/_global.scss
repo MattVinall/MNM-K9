@@ -29,7 +29,7 @@ h2::after {
 	content: "";
 	position: absolute;
 	bottom: -15px;
-	left: 46%;
+	left: calc(100% - 55%);
 	background: #c71585;
 	width: 125px;
 	height: 3px;
