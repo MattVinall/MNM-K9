@@ -58,17 +58,14 @@ iframe:hover {
 .formInfo {
 	display: flex;
 	flex-direction: column;
-}
-
-.formInfo h3 {
-	font-size: 2.5rem;
-	font-style: italic;
-	font-weight: 500;
-}
-
-.formInfo p {
-	font-size: 1.4rem;
-	font-weight: 300;
+	h3 {
+		font-size: 2.5rem;
+		font-weight: 700;
+	}
+	p {
+		font-size: 1.4rem;
+		font-weight: 300;
+	}
 }
 
 form {
