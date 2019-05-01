@@ -16,9 +16,12 @@ $(function() {
 
 	// Hamburger Menu
 	$('.hamburger').on('click', function() {
-		$('.navigationContainer').fadeIn(500);
+		$('.navigationContainer').fadeIn(300);
 	});
 	$('.exitResponsive').on('click', function() {
-		$('.navigationContainer').fadeOut(500);
+		$('.navigationContainer').fadeOut(300);
+	});
+	$('a').on('click', function() {
+		$('.navigationContainer').fadeOut(300);
 	});
 });
