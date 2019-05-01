@@ -2,13 +2,15 @@
 
 // edge case in contact section
 
-@media screen and (max-width: 1285px) {
+@media screen and (max-width: 1250px) {
 	.contactContainer {
 		text-align: center;
 	}
 
 	.formContainer {
+		flex-direction: column;
 		justify-content: center;
+		align-items: center;
 	}
 
 	.formInfo {
