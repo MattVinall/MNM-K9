@@ -107,12 +107,16 @@
 	.exitResponsive {
 		display: block;
 		font-size: 4rem;
-		color: $black-shade;
 		font-weight: 800;
 	}
 
 	.hamburger {
 		padding-top: 50px;
+		color: $black-shade;
+	}
+
+	.exitResponsive {
+		color: $off-white;
 	}
 
 	.navigationContainer {
@@ -171,8 +175,6 @@
 		flex: unset;
 		margin: 0 auto;
 		img {
-			width: 250px;
-			height: 250px;
 			margin: 0 auto;
 		}
 	}
@@ -296,6 +298,7 @@
 
 	.exitResponsive {
 		margin-left: 10%;
+		color: $off-white;
 	}
 
 	.carousel-cell {
