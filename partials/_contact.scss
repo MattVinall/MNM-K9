@@ -1,7 +1,7 @@
 /* CONTACT STYLES */
 
 .contact {
-	background-color: #d3d3d3;
+	background-color: #efefef;
 	min-height: 100vh;
 	padding: 100px 0;
 	h2 {
@@ -19,12 +19,11 @@
 
 .icon i {
 	font-size: 5rem;
-	color: $off-white;
+	color: $blue-heading;
 	display: flex;
 	justify-content: center;
 	transition: 400ms ease-in;
 	&:hover {
-		color: $off-blue;
 		transform: scale(1.2);
 	}
 }
