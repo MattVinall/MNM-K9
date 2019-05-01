@@ -47,9 +47,7 @@
 	.teamImage {
 		display: flex;
 		margin: 0 auto;
-		img {
-			align-self: center;
-		}
+		align-self: center;
 	}
 
 	.dogServices {
@@ -95,7 +93,6 @@
 }
 
 //edge case
-
 @media screen and (max-width: 850px) {
 	.team h3 {
 		width: unset;

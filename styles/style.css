@@ -481,6 +481,8 @@ header {
 
 .teamImage img {
   margin: 0 auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .mukka h3,
@@ -1007,10 +1009,7 @@ footer a:hover {
     display: -ms-flexbox;
     display: flex;
     margin: 0 auto;
-  }
-  .teamImage img {
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
         align-self: center;
   }
   .dogServices {
