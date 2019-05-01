@@ -1073,6 +1073,9 @@ footer a:hover {
 
 /* MEDIUM TO LARGE MOBILE */
 @media screen and (max-width: 700px) {
+  h2::after {
+    left: calc(100% - 60%);
+  }
   .hamburger,
   .exitResponsive {
     display: block;
@@ -1247,6 +1250,9 @@ footer a:hover {
 
 /* SMALL MOBILE */
 @media screen and (min-width: 300px) and (max-width: 450px) {
+  h2::after {
+    left: calc(100% - 65%);
+  }
   .menu ul a {
     font-size: 4rem;
     padding: 35px;
