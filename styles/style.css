@@ -678,7 +678,7 @@ ol.flickity-page-dots {
 }
 
 .dogServices .back {
-  background-color: #d3d3d3;
+  background-color: #efefef;
   color: #f5f5f5;
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
@@ -897,6 +897,7 @@ select {
   width: 550px;
   border-radius: 5px;
   padding: 25px;
+  background-color: #fff;
 }
 
 input {
@@ -909,7 +910,7 @@ input {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: #f5f5f5;
+  background-color: #fff;
   color: #262626;
   width: 550px;
   padding: 25px;
@@ -923,6 +924,7 @@ textarea {
   margin-top: 20px;
   padding: 25px;
   font-size: 1.8rem;
+  background-color: #fff;
   border: 1px solid #262626;
 }
 
