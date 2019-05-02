@@ -115,7 +115,6 @@
 
 	.hamburger {
 		padding-top: 50px;
-		color: $black-shade;
 	}
 
 	.exitResponsive {
@@ -161,10 +160,6 @@
 		margin-top: 30px;
 	}
 
-	.team {
-		text-align: center;
-	}
-
 	.tyler {
 		margin-top: 50px;
 	}
@@ -184,10 +179,9 @@
 	.about p {
 		width: 95%;
 		padding: 0;
-		text-align: center;
+		text-align: left;
 	}
 
-	.team p,
 	.team h3 {
 		text-align: center;
 	}
@@ -226,6 +220,9 @@
 	.servicesContainer {
 		p {
 			@include text(1.6, 1.8rem);
+		}
+		.social {
+			justify-content: space-around;
 		}
 	}
 
@@ -298,13 +295,8 @@
 		padding: 35px;
 	}
 
-	.hamburger,
-	.exitResponsive {
-		color: $off-white;
-	}
-
 	.hamburger {
-		padding-top: 75px;
+		padding-top: 100px;
 	}
 
 	.logo {
@@ -319,10 +311,6 @@
 	.carousel-cell {
 		height: 300px;
 	}
-
-	// .servicesContainer .social {
-	// 	padding: 20px;
-	// }
 
 	.dogServices .card {
 		width: 275px;

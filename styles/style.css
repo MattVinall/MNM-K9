@@ -576,7 +576,6 @@ ol.flickity-page-dots {
   font-size: 2rem;
   line-height: 2;
   padding-top: 50px;
-  text-align: center;
 }
 
 .servicesContainer .social {
@@ -703,7 +702,6 @@ ol.flickity-page-dots {
           flex-direction: column;
   -ms-flex-line-pack: center;
       align-content: center;
-  padding: 15px;
 }
 
 .dogServices .card:hover .back {
@@ -1087,7 +1085,6 @@ footer a:hover {
   }
   .hamburger {
     padding-top: 50px;
-    color: #262626;
   }
   .exitResponsive {
     color: #f5f5f5;
@@ -1133,9 +1130,6 @@ footer a:hover {
   .logo {
     margin-top: 30px;
   }
-  .team {
-    text-align: center;
-  }
   .tyler {
     margin-top: 50px;
   }
@@ -1156,9 +1150,8 @@ footer a:hover {
   .about p {
     width: 95%;
     padding: 0;
-    text-align: center;
+    text-align: left;
   }
-  .team p,
   .team h3 {
     text-align: center;
   }
@@ -1197,6 +1190,10 @@ footer a:hover {
     font-family: "Roboto", sans-serif;
     font-size: 1.8rem;
     line-height: 1.6;
+  }
+  .servicesContainer .social {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .services,
   .gallery,
@@ -1260,12 +1257,8 @@ footer a:hover {
     font-size: 4rem;
     padding: 35px;
   }
-  .hamburger,
-  .exitResponsive {
-    color: #f5f5f5;
-  }
   .hamburger {
-    padding-top: 75px;
+    padding-top: 100px;
   }
   .logo {
     margin-top: 50px;
