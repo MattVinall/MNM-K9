@@ -320,6 +320,8 @@ header {
   width: 100%;
   background-position: center;
   min-height: 80vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .hamburger,
@@ -578,7 +580,7 @@ ol.flickity-page-dots {
 }
 
 .servicesContainer .social {
-  padding-top: 75px;
+  padding: 50px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -756,8 +758,8 @@ ol.flickity-page-dots {
 }
 
 .productContainer .productImage img:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .productContainer .productText {
@@ -1002,16 +1004,17 @@ footer a:hover {
             order: 1;
   }
   .about {
-    text-align: center;
+    text-align: left;
   }
   .about p {
     width: 100%;
   }
-  .mukka h3,
-  .fenrir h3,
+  .about h3 {
+    text-align: center;
+  }
   .mukka .bioText p,
   .fenrir .bioText p {
-    text-align: center;
+    text-align: left;
   }
   .teamImage {
     display: -webkit-box;
@@ -1273,9 +1276,6 @@ footer a:hover {
   }
   .carousel-cell {
     height: 300px;
-  }
-  .servicesContainer .social i {
-    padding: 20px;
   }
   .dogServices .card {
     width: 275px;

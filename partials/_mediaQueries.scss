@@ -35,17 +35,18 @@
 	}
 
 	.about {
-		text-align: center;
+		text-align: left;
 		p {
 			width: 100%;
 		}
+		h3 {
+			text-align: center;
+		}
 	}
 
-	.mukka h3,
-	.fenrir h3,
 	.mukka .bioText p,
 	.fenrir .bioText p {
-		text-align: center;
+		text-align: left;
 	}
 
 	.teamImage {
@@ -80,10 +81,6 @@
 			padding-top: 50px;
 		}
 	}
-
-	// .quote {
-	// 	padding: 0 10%;
-	// }
 
 	.formContainer {
 		display: flex;
@@ -323,9 +320,9 @@
 		height: 300px;
 	}
 
-	.servicesContainer .social i {
-		padding: 20px;
-	}
+	// .servicesContainer .social {
+	// 	padding: 20px;
+	// }
 
 	.dogServices .card {
 		width: 275px;
