@@ -884,12 +884,15 @@ form {
   margin-top: 20px;
 }
 
+.inputContainer {
+  position: relative;
+}
+
 select {
   -moz-appearance: none;
   -webkit-appearance: none;
   font-size: 1.8rem;
   appearance: none;
-  border: 1px solid #262626;
   background-image: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png);
   background-repeat: no-repeat;
   background-position: 95% center;
@@ -897,6 +900,8 @@ select {
   border-radius: 5px;
   padding: 25px;
   background-color: #fff;
+  color: #262626;
+  border: 1px solid transparent;
 }
 
 input {
@@ -914,8 +919,10 @@ input {
   width: 550px;
   padding: 25px;
   margin-top: 20px;
-  border: 1px solid #262626;
   border-radius: 5px;
+  border: 2px solid transparent;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 textarea {
@@ -924,7 +931,11 @@ textarea {
   padding: 25px;
   font-size: 1.8rem;
   background-color: #fff;
-  border: 1px solid #262626;
+  border: 1px solid transparent;
+  color: #262626;
+  border: 2px solid transparent;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 input[type="submit"] {
@@ -941,6 +952,100 @@ input[type="submit"]:hover {
   background-color: #262626;
   color: #f5f5f5;
   font-weight: bold;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+span {
+  position: absolute;
+  background-color: #c71585;
+  -webkit-transition: -webkit-transform 0.1s ease;
+  transition: -webkit-transform 0.1s ease;
+  transition: transform 0.1s ease;
+  transition: transform 0.1s ease, -webkit-transform 0.1s ease;
+}
+
+.bottom,
+.top {
+  height: 1px;
+  left: 0;
+  right: 0;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.left,
+.right {
+  width: 1px;
+  top: 0;
+  bottom: 0;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+
+.bottom {
+  bottom: 0;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+input:focus ~ .bottom,
+textarea:focus ~ .bottom {
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.right {
+  right: 0;
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+  -webkit-transition-delay: 0.05s;
+          transition-delay: 0.05s;
+}
+
+input:focus ~ .right,
+textarea:focus ~ .right {
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.top {
+  top: 0;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+input:focus ~ .top,
+textarea:focus ~ .top {
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.left {
+  left: 0;
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+
+input:focus ~ .left,
+textarea:focus ~ .left {
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
 }
 
 footer {

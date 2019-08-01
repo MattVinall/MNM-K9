@@ -72,12 +72,15 @@ form {
 	margin-top: 20px;
 }
 
+.inputContainer {
+	position: relative;
+}
+
 select {
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	font-size: 1.8rem;
 	appearance: none;
-	border: 1px solid $black-shade;
 	background-image: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png);
 	background-repeat: no-repeat;
 	background-position: 95% center;
@@ -85,6 +88,8 @@ select {
 	border-radius: 5px;
 	padding: 25px;
 	background-color: #fff;
+	color: $black-shade;
+	border: 1px solid transparent;
 }
 
 input {
@@ -97,8 +102,9 @@ input {
 	width: 550px;
 	padding: 25px;
 	margin-top: 20px;
-	border: 1px solid $black-shade;
 	border-radius: 5px;
+	border: 2px solid transparent;
+	transition: background-color 0.3s ease-in-out;
 }
 
 textarea {
@@ -107,7 +113,10 @@ textarea {
 	padding: 25px;
 	font-size: 1.8rem;
 	background-color: #fff;
-	border: 1px solid $black-shade;
+	border: 1px solid transparent;
+	color: $black-shade;
+	border: 2px solid transparent;
+	transition: background-color 0.3s ease-in-out;
 }
 
 input[type="submit"] {
@@ -122,4 +131,78 @@ input[type="submit"] {
 		color: $off-white;
 		font-weight: bold;
 	}
+}
+
+input:focus,
+textarea:focus {
+	outline: none;
+}
+
+span {
+	position: absolute;
+	background-color: #c71585;
+	transition: transform 0.1s ease;
+}
+
+.bottom,
+.top {
+	height: 1px;
+	left: 0;
+	right: 0;
+	transform: scaleX(0);
+}
+
+.left,
+.right {
+	width: 1px;
+	top: 0;
+	bottom: 0;
+	transform: scaleY(0);
+}
+
+.bottom {
+	bottom: 0;
+	transform-origin: bottom right;
+}
+
+input:focus ~ .bottom,
+textarea:focus ~ .bottom {
+	transform-origin: bottom left;
+	transform: scaleX(1);
+}
+
+.right {
+	right: 0;
+	transform-origin: top right;
+	transition-delay: 0.05s;
+}
+
+input:focus ~ .right,
+textarea:focus ~ .right {
+	transform-origin: bottom right;
+	transform: scaleY(1);
+}
+
+.top {
+	top: 0;
+	transform-origin: top left;
+	transition-delay: 0.15s;
+}
+
+input:focus ~ .top,
+textarea:focus ~ .top {
+	transform-origin: top right;
+	transform: scaleX(1);
+}
+
+.left {
+	left: 0;
+	transform-origin: bottom left;
+	transition-delay: 0.25s;
+}
+
+input:focus ~ .left,
+textarea:focus ~ .left {
+	transform-origin: top left;
+	transform: scaleY(1);
 }
